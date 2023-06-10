@@ -8,12 +8,12 @@ interface CurrencySelectProps {
 }
 
 export const CurrencySelect:React.FC<CurrencySelectProps> = ({ onCurrencyChange }) => {
-  const options = [
+  const options: Array<{value: Currency, label: Currency}> = [
     { value: 'BTC', label: 'BTC' },
     { value: 'ETH', label: 'ETH' },
     { value: 'USDT', label: 'USDT' }
   ]
   return(
-    <Select options={options} defaultValue={options[2]} onChange={(item: typeof options[number]) => onCurrencyChange(item.value as Currency)} />
+    <Select options={options} defaultValue={options[2]} onChange={(item: any) => item && onCurrencyChange(item.value)} />
   );
 }
