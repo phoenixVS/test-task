@@ -13,6 +13,7 @@ export default function Home() {
           <h1>Task 2:</h1>
           <ItemsPrice />
         </div>
+       <a href="https://github.com/phoenixVS/test-task">Source code</a>
       </div>
     </main>
   )
