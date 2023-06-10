@@ -8,7 +8,7 @@ interface NavbarProps {
 const content = [
   'First',
   'Second',
-  'Some third item'
+  'Some third text'
 ]
 export const Navbar:React.FC<NavbarProps> = props => {
   return(
